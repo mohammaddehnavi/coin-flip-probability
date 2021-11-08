@@ -92,22 +92,12 @@ class Ui_Form(object):
         flips = flip_coin(total, ph)
 
         # Accumulate head frequencies
-        results = [np.sum(flips[:idx] == 'H') / np.float(idx) for idx in attempts]
-
-        # Make plot
-        fig, ax = plt.subplots(figsize=(12, 8))
-
-        # Plot simulated flips
-        ax.plot(attempts, results, 'o-', alpha=0.75, label='Simulation')
-
-        # Plot theoretical expectation
-        ax.axhline(ph, 0, 1, color='r', alpha=0.75, label='Theory')
+        results = [np.sum(flips[:idx] == 'H') / float(idx) for idx in attempts]
 
         # Compute y limits (how far above or below P(H) to display)
         yp = abs(max(results) - ph)
         yn = abs(min(results) - ph)
         y_delta = max(yp, yn)
-        ax.set_ylim(ph - y_delta, ph + y_delta)
 
         # Create canvas
         self.MplWidget.canvas.axes.clear()
@@ -119,6 +109,7 @@ class Ui_Form(object):
         self.MplWidget.canvas.axes.set_ylabel('P(Head)', fontsize=18)
         self.MplWidget.canvas.axes.set_ylim(ph - y_delta, ph + y_delta)
         self.MplWidget.canvas.draw()
+
 
 if __name__ == "__main__":
     import sys
