@@ -4,14 +4,14 @@
 
 ```bash
 git clone https://github.com/mohammaddehnavi/coin-flip-probability.git
+cd coin-flip-probability
 ```
 ## Install virtual env 
 
 ```bash
 pip3 install virtualenv
-python3 -m venv coin-flip-probability
-cd coin-flip-probability
-source bin/activate
+python3 -m venv env-coin-flip-probability
+source env-coin-flip-probability/bin/activate
 ```
 
 ## Install requirements
@@ -27,7 +27,7 @@ pip install -r requirements.txt
 ## RUN
 
 ```bash
-python main.py
+python3 main.py
 ```
 
 ## Change GUI
