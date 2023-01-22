@@ -47,3 +47,9 @@ pip install auto-py-to-exe
 ## Run auto-py-to-exe for compile and build 
 auto-py-to-exe
 ```
+
+## Application pics
+
+![main1](./Assets/main1.png)
+![main2](./Assets/main2.png)
+![main3](./Assets/main3.png)
