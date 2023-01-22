@@ -68,7 +68,7 @@ class Ui_Form(object):
         self.total_label.setText(_translate("Form", "Number of fliping"))
         self.total.setText(_translate("Form", "5000"))
         self.probability_span_label_2.setText(_translate("Form", "probability span"))
-        self.probability_span.setText(_translate("Form", "100"))
+        self.probability_span.setText(_translate("Form", "1"))
         self.button.setText(_translate("Form", "Calculate!"))
         self.label.setText(_translate("Form", "<html><head/><body><p>Created by Mohammad Torkaman Dehnavi</p><p>Email: mtorkaman69@gmail.com</p><p>Github: mohammaddehnavi</p></body></html>"))
 
